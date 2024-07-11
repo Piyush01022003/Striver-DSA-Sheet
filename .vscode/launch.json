@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/piyus/OneDrive/Desktop/Striver DSA Sheet/Arrays",
+      "program": "c:/Users/piyus/OneDrive/Desktop/Striver DSA Sheet/Arrays/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
