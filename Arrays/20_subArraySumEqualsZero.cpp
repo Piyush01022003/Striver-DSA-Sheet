@@ -1,0 +1,30 @@
+/*
+Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
+
+Input: nums = [0,1]
+Output: 2
+*/
+
+
+
+
+class Solution {
+public:
+    int findMaxLength(vector<int>& nums) {
+        unordered_map<int,int> mp;
+        int n= nums.size();
+        int currSum=0;
+        int result = 0;
+        mp[0]=-1;
+        for(int i=0;i<n;i++){
+            currSum += (nums[i] == 1) ? 1 : -1;
+            if(mp.find(currSum) != mp.end()){
+                result = max(result,i-mp[currSum]);
+            } 
+            else{
+                mp[currSum] = i;
+            }
+        }
+        return result;
+    }
+};
